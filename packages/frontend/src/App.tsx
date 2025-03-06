@@ -630,7 +630,6 @@ function App() {
   };
 
   const onSubmit = handleSubmit((data) => {
-    console.log('data', data);
     generateMutation.mutate(data);
     setLastGenerationState({
       ...data,
